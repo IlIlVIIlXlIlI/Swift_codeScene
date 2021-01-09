@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="20" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--ElCapitanPageViewController-->
         <scene sceneID="dTC-Ig-eBO">
             <objects>
-                <viewController storyboardIdentifier="ElCapitanPage" id="sf5-dC-61b" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ElCapitanPage" title="ElCapitanPageViewController" id="sf5-dC-61b" customClass="ElCapitanPageViewController" customModule="codeScene" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0HN-DC-R5h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,6 +45,14 @@
                                 <rect key="frame" x="16" y="144" width="378" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFC-qk-S2O">
+                                <rect key="frame" x="156" y="420" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Back Home"/>
+                                <connections>
+                                    <action selector="backToHome:" destination="sf5-dC-61b" eventType="touchUpInside" id="T8X-1z-tsK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yRk-WH-MtL"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
